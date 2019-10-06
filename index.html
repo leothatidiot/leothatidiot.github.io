@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+	<meta charset="utf-8">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<title>茗饮茶馆 - 一杯清茶浮沉，窥见人生百味</title>
+	<link rel="shortcut icon" href="ico/bitbug_favicon(1).ico">
+	<script type="text/javascript">
+		function change() {
+			document.getElementsByTagName("span")[2].innerHTML="昏睡红茶";
+		}
+		function undo(){
+			document.getElementsByTagName("span")[2].innerHTML="茗茶";
+		}
+	</script>
+</head>
+
+<body>
+	<div id="main">
+		<div class="intro">
+			<span class="welcome" style="text-align: center; display: block;">
+				<big style="letter-spacing: 8px; font-size: 24px;"><b>你好~欢迎来到重邮指定茶馆</b></big>
+			</span>
+
+			<span style="text-align: center; display: block; color: red; font-size:20px" >
+				特供<span id="yaosu" title="要素察觉" onmouseover="change()" onmouseout="undo()">茗茶</span>
+			</span>
+			<span style="text-align: center; display: block; font-weight: bold; color: blue"> 以及各种高雅音乐 </span>
+		</div>
+
+		<br>
+
+		<div class="music" style="text-align: center;">
+			<span style="">请聆听一些雅乐放松心情<br></span><br>
+			<span>王昌元 - 高山流水 (浙江筝曲).mp3</span><br>
+			<audio controls="controls" src="./music/王昌元 - 高山流水 (浙江筝曲).mp3" type="audio/mp3"></audio>
+			<br>
+			<br>
+			<span>吉村七重 - Itsutsu no Shohin： Nishikigi ni yosete： Moegi.mp3</span><br>
+			<audio controls="controls" src="./music/吉村七重 - Itsutsu no Shohin： Nishikigi ni yosete： Moegi.mp3" type="audio/mp3"></audio>
+			<br>
+			<br>
+			<span>群星 - 香山射鼓 (古箏独奏).mp3</span><br>
+			<audio controls="controls" src="./music/群星 - 香山射鼓 (古箏独奏).mp3" type="audio/mp3"></audio>
+			<br>
+			<br>
+			<span>吉村七重 - Aki-no-kyoku： Aki-no-fantaji (Autumn Fantasy).mp3</span><br>
+			<audio controls="controls" src="./music/吉村七重 - Aki-no-kyoku： Aki-no-fantaji (Autumn Fantasy).mp3" type="audio/mp3"></audio>
+			<br>
+			<br>
+
+		</div>
+	</div>
+</body>
+
+</html>
